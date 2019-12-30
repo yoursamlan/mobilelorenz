@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lorenz Attractor Simulator by Amlan Saha Kundu</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta 
+     name='viewport' 
+     content='width=device-width, maximum-scale=1.0, user-scalable=0' 
+/>
+    <link rel="stylesheet" href="lorenz.css"/>
+     <script src="removeBanner.js" type="text/javascript"></script>
+     
+    <script src="js/lorenz.js" defer></script>
+    <script src="js/controls.js" defer></script>
+    <script src="js/main.js" defer></script>
+     
+      <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+  </head>
+  <body>
+      <canvas id="lorenz"></canvas>
+      
+       <h1 style="color: #fab6b6;
+                       font-size:25px;
+                       margin:0px;
+                       padding:0px;
+                       font-family:Comfortaa,fantasy;
+                       text-align: center;
+                       text-transform: capitalise;
+                       word-spacing:10px">
+                Lorenz Attractor Visualizer
+                
+              </h1>
+              <h1 style="color: #b6fae8;
+                       font-size:20px;
+                       font-family:Lato,Comfortaa,fantasy;
+                       text-align: center;
+                         font-weight: 50;
+                         word-spacing: 5px;">
+                Amlan Saha Kundu
+              </h1>
+    <div id="menuu">
+        <ul style="color: #c2ed88;
+                       font-size:15px;
+                       font-family:Comfortaa,fantasy;
+                       text-align: left;
+                      list-style-type: none;
+                      margin-bottom:0px;
+                      padding-bottom:0px;">
+           
+              
+          
+        <li>
+          <!--select id="preset" style="margin-right:20px;
+                                     font-size: 30px;
+                                     text-align: center">
+            <option disabled selected>-- Visualization --</option>
+            <option value="chaos">Chaos Demo</option>
+            <option value="gentle">Rotation</option>
+            <option value="bendy">Bendy</option>
+            
+          </select-->
+        </li>
+        <li>
+          <input id="length" type="range" min="2" max="12" step="1"/>
+          <label><br> Tail Length = <span id="length-label"></span></label>
+        </li>
+        <li>
+          <input id="sigma" type="range" min="-1" max="20" step="0.01"/>
+          <label><br>&sigma; = <span id="sigma-label"></span></label>
+        </li>
+        <li>
+          <input id="beta" type="range" min="0" max="20" step="0.01"/>
+          <label><br>&beta; = <span id="beta-label"></span></label>
+        </li>
+        <li>
+          <input id="rho" type="range" min="0" max="360" step="0.01"/>
+          <label><br>&rho; = <span id="rho-label"></span></label>
+        </li>          
+        
+      </ul>
+      <center>
+      <h1>
+        <a href="https://mobilelorenz.000webhostapp.com/" style="float:center;
+                                                                padding-top:3px;
+                                                                padding-bottom:3px;
+                                                                padding-left:15px;
+                                                                padding-right:15px;
+                                                                    text-decoration:none;
+                                                                    font-size:20px;
+                                                                    border:1px solid #700;
+                                                                    color:#700;
+                                                                    font-weight:50;
+                                                                    font-family:comfortaa,Lato,sans-serif;
+                                                                    "> Reset</a>
+      </h1>
+      </center>
+      <!--div id="stats"></div>
+    </div-->
+  </body>
+</html>
